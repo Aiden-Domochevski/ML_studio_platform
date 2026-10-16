@@ -32,7 +32,10 @@ from sklearn.svm import SVC, SVR
 from sklearn.tree import DecisionTreeClassifier, DecisionTreeRegressor
 
 warnings.filterwarnings("ignore")
-st.set_page_config(page_title="ML_STUDIO//PRO", page_icon="▌", layout="wide")
+from pathlib import Path
+
+_ICON = Path(__file__).parent / "favicon.png"
+st.set_page_config(page_title="ML_STUDIO//PRO", page_icon=str(_ICON) if _ICON.exists() else "▌", layout="wide")
 
 # ============================== THEME ==============================
 st.markdown("""
