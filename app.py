@@ -44,6 +44,9 @@ st.markdown("""
 .stApp {background: #000;}
 .block-container {padding-top: 2rem; max-width: 1400px;}
 h1, h2, h3, h4 {color: #00ff41 !important; text-shadow: 0 0 8px rgba(0,255,65,.4);}
+.credit {display: inline-block; font-size: .72rem; font-weight: 700; letter-spacing: 2px; color: #00ff41;
+  background: #030b04; border: 1px solid #0f3d1a; border-left: 3px solid #00ff41; padding: .25rem .75rem;
+  margin-bottom: .9rem; text-shadow: 0 0 6px rgba(0,255,65,.5);}
 .prompt {color: #2e8b45; font-size: .95rem;}
 .prompt .cmd {color: #9dffb0;}
 .cursor {color: #00ff41; animation: blink 1s steps(2, start) infinite;}
@@ -67,6 +70,7 @@ div[data-testid="stMetricLabel"] {color: #2e8b45;}
 div[data-testid="stExpander"] {border: 1px solid #0f3d1a; border-radius: 2px;}
 code, pre {color: #00ff41 !important;}
 </style>
+<div class="credit">MADE BY SALAH EDDINE AHADAF</div>
 <div class="prompt">root@ml-studio:~$ <span class="cmd">./launch --mode=pro</span><span class="cursor">█</span></div>
 <h1 class="title">ML_STUDIO<span class="dim">//PRO</span></h1>
 <div class="sub">load · configure · train · benchmark · predict &mdash; no cloud, no fluff.</div>
