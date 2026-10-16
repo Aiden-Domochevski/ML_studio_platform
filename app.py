@@ -42,13 +42,10 @@ st.markdown("""
 <style>
 #MainMenu, footer {visibility: hidden;}
 .stApp {background: #000;}
-.block-container {padding-top: 2rem; max-width: 1400px;}
+.block-container {padding-top: 4.5rem; max-width: 1400px;}
 h1, h2, h3, h4 {color: #00ff41 !important; text-shadow: 0 0 8px rgba(0,255,65,.4);}
-.prompt {color: #2e8b45; font-size: .95rem;}
-.prompt .cmd {color: #9dffb0;}
-.prompt .who {color: #00ff41; font-weight: 700; letter-spacing: 1px; text-shadow: 0 0 8px rgba(0,255,65,.5);}
-.cursor {color: #00ff41; animation: blink 1s steps(2, start) infinite;}
-@keyframes blink {to {visibility: hidden;}}
+.credit {color: #00ff41; font-size: 1.05rem; font-weight: 700; letter-spacing: 3px;
+  text-shadow: 0 0 10px rgba(0,255,65,.6); margin-bottom: .4rem;}
 .title {font-size: 2.6rem !important; letter-spacing: 2px; margin: .2rem 0 0 0; padding: 0;}
 .title .dim {color: #1f6b34; text-shadow: none;}
 .sub {color: #2e8b45; margin-bottom: 1.2rem; border-bottom: 1px dashed #0f3d1a; padding-bottom: .8rem;}
@@ -68,7 +65,7 @@ div[data-testid="stMetricLabel"] {color: #2e8b45;}
 div[data-testid="stExpander"] {border: 1px solid #0f3d1a; border-radius: 2px;}
 code, pre {color: #00ff41 !important;}
 </style>
-<div class="prompt"><span class="who">MADE BY SALAH EDDINE AHADAF</span> <span class="cmd">./launch --mode=pro</span><span class="cursor">█</span></div>
+<div class="credit">MADE BY SALAH EDDINE AHADAF</div>
 <h1 class="title">ML_STUDIO<span class="dim">//PRO</span></h1>
 <div class="sub">load · configure · train · benchmark · predict &mdash; no cloud, no fluff.</div>
 """, unsafe_allow_html=True)
